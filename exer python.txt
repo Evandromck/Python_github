@@ -1,0 +1,284 @@
+
+import random
+ex = 'Digite um numero para saber seu sucessor e seu antecessor'
+ex1 = 'exercicio 1'
+ex2 = 'exerciocio 2'
+lista = [ex, ex1, ex2]
+escolhido = random.choice(lista)
+print('foi {}'.format(escolhido))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 05 ok
+n1 = int (input('Digite um numero para saber seu sucessor e seu antecessor'))
+a = n1 - 1
+b = n1 + 1
+print ("seu numero é {} e o seu antecessor é {} e o sucessor é {}".format(n1, a, b))
+
+
+
+#06  ok
+n1 = int (input('Digite um numero para saber seu sucessor e seu antecessor'))
+a = n1 * 2
+b = n1 * 3
+c = n1 **(1/2) #raiz quadrada do n1 
+print ('O dobro de {} o tripo {} e a raiz quadrada {:.2f}.'.format(a, b, c))
+
+
+#07 ok
+n1 = int (input ('Digite a primeira nota'))
+n2 = int (input ('Digite a segunda nota '))
+a = n1 + n2
+s = a / 2
+print ('sua nota foi {} e seu media é {}'.format(a, s))
+
+
+#08 ok
+ m = float (input ('Quantos metro tem'))
+c = m * 100
+mm = m * 1000
+print('O metro foi {} para centrimetro{:.2f} para milimetro {:.2f}'.format(m, c, mm))
+
+
+#09 ok
+n = int (input('tabuada do numero:'))
+
+print('{}x{:2}={}'.format(n, 1, n*1))
+print('{}x{:2}={}'.format(n, 2, n*2))
+print('{}x{:2}={}'.format(n, 3, n*3))
+print('{}x{:2}={}'.format(n, 4, n*4))
+print('{}x{:2}={}'.format(n, 5, n*5))
+print('{}x{:2}={}'.format(n, 6, n*6))
+print('{}x{:2}={}'.format(n, 7, n*7))
+print('{}x{:2}={}'.format(n, 8, n*8))
+print('{}x{:2}={}'.format(n, 9, n*9))
+print('{}x{}={}'.format(n, 10, n*10))
+
+
+
+#10 ok
+real = float(input('Quanto dinheiro voce tem na carteira? R$ '))
+dolar = real / 3.27
+print('Seu valor {:.2f} em dolar {:.2f}'.format(real, dolar))
+
+
+#11 ok
+largura = float (input ('Qual a largura da parede'))
+altura = float(input('Qual a altura da parede?'))
+área = largura*altura
+print('Sua parede tem {}x{} e sua aria e {}m2.'.format(largura, altura, área))
+tinta = área / 2
+print('para pintar essa parede voce precisará de {}l de tinta.'.format(tinta))
+
+
+#12
+p = float(input('Qual o preço do produto com Desconto ?')) 
+saln = p - ( p * 5 / 100) 
+print('Seu produto {} com um aumento de 5% {}'.format(p, saln))
+
+
+#13
+salario = float(input('Digite o salario para o aumento de 15% '))
+aum = salario + (salario*15/100)
+print('Seu salario {} com aumento vai {}'.format(salario, aum))
+
+
+#14
+
+g = float(input('Digite a grau cels para frarenraid'))
+f = ((9*g)/5)+32
+print ('A temperatura de {}°C corresponde a {}°f!'.format(g, f))
+
+
+#15 fiz sozinho aluguel de um carro com o km
+km = float(input('Qual a km do carro ?'))
+qntdia = int(input('Qual a quantidade de dias ?'))
+custdia = qntdia * 60
+rodado = 0.15 * km
+total = custdia + rodado
+print('O valor total do alugue >> {}'.format(total))
+
+
+#16 de float para int 
+from math import trunc
+num = float(input('digite um valor com virgula '))
+print('Seu valor {} com formatação int {}'.format(num, trunc(num)))
+print('Seu valor {} com formatação int {}'.format(num, int(num)))
+
+
+#17 
+co = float(input('Digite o comprimento do cateto? '))
+ca = float(input('Digite o comprimento cateto ?'))
+hi = (co ** 2 + ca ** 2) ** (1/2)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+
+import math
+an = float(input('Digite o ângulo que voce deseja: '))
+seno = math.sin(math.radians(an))
+print('O ângulo de {} tem o SENO {:.2f}'.format(an, seno))
+seno = math.cos(math.radians(an))
+print('O ângulo de {} tem o COSSENO de {:.2f}'.format(an, seno))
+tangente = math.tan(math.radians(an))
+print('O ângulo de {} tem a TAGENTE de {:.2f}'.format(an, tangente))
+
+
+
+import random
+al1 = str(input('Digite o primeiro nome:'))
+al2 = str(input('Digite o segundo nome: '))
+al3 = str(input('Digite o terceiro: '))
+al4 = str(input('Digite o quarto: '))
+lista = [al1, al2, al3, al4]
+escolhido = random.choice(lista)
+print('O aluno escolhido foi {}'.format(escolhido)) 
+
+
+ome = str(input('Digite um nome completo: '))
+print('Analisando seu nome...')
+print('Seu nomde em maiúsculo é {}'.format(nome.upper())) #upper coloca o nome caixa alta
+print('Seu nomde em minúsculo é {}'.format(nome.lower())) #lower colocar o nome caixa baixa 
+print('Seu nome tem so todo {} letras'.format(len(nome) - nome.count(' '))) # len -> conta as letras! - espaços 
+print('Seu primeiro nome tem {} letras'.format(nome.find(' '))) #primeiro nome antes do espaço entre eles
+
+
+num = int(input('Digite um número:'))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Analisando o numero {}'.format(num))
+print('Unidade:{}'.format(u))
+print('Dezena: {}'.format(d))
+print('centena: {}'.format(c))
+print('Milhar: {}'.format(m))
+
+
+soma = 0
+cont = 0
+for c in range (1, 7):
+    num = int(input('Digite o valor {}° valor:'.format(c)))
+    if num % 2 == 0:
+        soma += num
+        cont += 1
+print('Voce informou {} números pares e a soma foi {}'.format(cont, soma)) 
+
+
+
+primeiro = int(input('primeiro termo'))
+razão = int(input('Razão: '))
+décimo = primeiro + (10 - 1) * razão #FORMULA DA RAZÃO DA CONTAGEM DE PULAR NUMEROS 
+for c in range (primeiro, décimo, razão, razão):
+    print('{}'.format(c), end='->')
+print('ACABOU')    
+
+
+
+
+num = int(input('Digite um número: '))
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print('\033[33m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(c), end=' ') 
+print('\n O numero {} foi divisivel {} vezes'.format(num, tot)) 
+
+
+
+from datetime import date 
+atual = date.today().year
+totmaior = 0
+totmenor = 0
+for pess in range(1, 8):
+    nasc = int(input('Em que ano a {} pessoa neasceu? '))
+    idade = atual - nasc
+    if idade >= 18:
+        totmaior += 1
+    else: 
+        totmenor += 1
+
+print('Ao tod ')  
+
+
+
+
+for p in range(1, 6):
+    peso = float(input('Peso da {} pessoa:'.format(p)))
+    if p == 1:
+        maior = peso
+        menor = peso 
+    else: 
+      if peso > maior:
+          maior = peso
+      if peso < menor: 
+          menor = peso 
+print('O maior peso lido foi {}'.format(maior))
+print('O menor peso lido foi {}'.format(menor)) 
+
+
+
+print('-'*30)
+print('Sequência de fibonacci')
+for c in range(0, 10):
+    n = int(input('Quantos termos voce quer mostrar -> '))
+    t1 = 0
+    t2 = 1
+    print('~'*30)
+    print('{} -> {}'.format(t1, t2), end='')
+    cont = 3
+    while cont <= n:
+        t3 = t1 + t2
+        print(' -> {}'.format(t3), end='')
+        t1 = t2
+        t2 = t3
+        cont += 1
+    print(' fim ')
+    print('~'*30) 
+print('fim do fim')      
+
+
+
+
+from time import sleep
+
+def maior (*num):
+  cont = maior = 0
+  print('Aanalisando os valores ')
+  for valor in num:
+     print(f'{valor}', end='', flush=True)
+     sleep(0.3)
+
+
+print('~'*20)
+maior (2,1,3,4,5,6) 
+
+
+
+import random import randint
+from time import sleep
+
+def sorteio(lista)
+    print('Sorteio de 5 valores da lista: ', end='')
+    for cont in range(0, 5):
+       n =randint(1, 10)
+       lista.append(n)
+       print(f'{n}', end=', flush=true)
+
+def somaPar(lista):
+    soma = 0
+    for valor in lista:
+        if valor & 2 == 0
